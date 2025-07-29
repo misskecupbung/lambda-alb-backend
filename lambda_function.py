@@ -5,8 +5,8 @@ def lambda_handler(event, context):
     # Explicitly specify endpoint URL and region
     client = boto3.client(
         's3',
-        endpoint_url='https://s3.<region>.amazonaws.com',
-        region_name='<region>'
+        endpoint_url='https://st-deviz-s3-vpce.s3.us-east-1.amazonaws.com',
+        region_name='us-east-1'
     )
 
     html = get_object(client)
